@@ -1,6 +1,7 @@
 #pragma once
 
 #include "EZ-Template/api.hpp"
+#include "EZ-Template/piston.hpp"
 #include "api.h"
 
 extern Drive chassis;
@@ -17,8 +18,12 @@ extern Drive chassis;
     inline ez::Piston LeftIntakeArm('G');
     inline ez::Piston RightIntakeArm('E');
 
-    inline ez::Piston RightArm('H');
-    inline ez::Piston LeftArm('F');
+    inline ez::Piston RightWing('H');
+    inline ez::Piston LeftWing('F');
+
+    inline ez::Piston Loader('D');
+
+    inline pros::Optical ColorSensor(2);
 
 
 
